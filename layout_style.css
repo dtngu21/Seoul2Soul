@@ -1,0 +1,40 @@
+header { grid-area:header; }
+
+nav { grid-area:nav }
+
+nav ul { float:right; }
+
+nav ul li { display: inline-block; }
+
+main {
+  grid-area: main;
+  width: 90%;
+  max-width: 1250px;
+  margin: auto auto;
+}
+
+section { grid-area: section; }
+
+footer { grid-area: footer; }
+
+#layout {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-areas:
+    "nav"
+    "header"
+    "section"
+    "main"
+    "footer"
+}
+
+.sectioned-groups {
+  float: left;
+  width: 70%;
+}
+
+.sidebar-col {
+  float: right;
+  width: 30%;
+  background-color: #ABB1CF;
+}
